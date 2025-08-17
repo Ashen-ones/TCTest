@@ -7,13 +7,19 @@ import json
 import shutil
 import datetime
 
+from click import command
+from setuptools.config.expand import cmdclass
+
+
 # 兼容下chardet
 def install_module(module_name):
     try:
         __import__(module_name)
     except ImportError:
         print(f'{module_name} not found. Installing...')
-        os.system(f'python -m pip install {module_name}')
+        cmd = rf"python -m pip install {module_name}"
+        print(cmd)
+        os.system(cmd)
 
 install_module("chardet")
 import chardet
