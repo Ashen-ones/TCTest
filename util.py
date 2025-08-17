@@ -13,7 +13,7 @@ def install_module(module_name):
         __import__(module_name)
     except ImportError:
         print(f'{module_name} not found. Installing...')
-        os.system(f'pip install {module_name}')
+        os.system(f'python -m pip install {module_name}')
 
 install_module("chardet")
 import chardet
