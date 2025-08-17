@@ -4,10 +4,10 @@ def print_environment_variables():
     env_vars = os.environ
 
     # 打印每个环境变量
-    print("环境变量列表:")
+    print("show env var:")
     print("=" * 40)
     for key, value in env_vars.items():
-        print(f"{key}: {value}")
+        print(f"env var: {key}: {value}")
 
 
 if __name__ == "__main__":
