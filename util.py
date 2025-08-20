@@ -85,13 +85,13 @@ def execute_command(command):
 #                     shutil.copyfile(FilePath,FileNewPath)
 # 
 # 
-# def DeleteFile(RootPath):
-#     print("Delete All File",RootPath)
-#     for root, dirs, files in os.walk(RootPath, topdown=False):
-#         for name in files:
-#             os.remove(os.path.join(root, name))
-#         for name in dirs:
-#             os.rmdir(os.path.join(root, name))
+def delete_path(root_path):
+    print("Delete All File",root_path)
+    for root, dirs, files in os.walk(root_path, topdown=False):
+        for name in files:
+            os.remove(os.path.join(root, name))
+        for name in dirs:
+            os.rmdir(os.path.join(root, name))
 # 
 # 
 # def ExecCmd(Cmd):
