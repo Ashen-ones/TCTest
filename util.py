@@ -12,7 +12,6 @@ def install_module(module_name):
         os.system(cmd)
 
 install_module("chardet")
-import chardet
 
 def execute_command(command):
     print("exc command",command)
