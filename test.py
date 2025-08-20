@@ -19,8 +19,8 @@ class ProjectBuildInformation:
 
     def set_build_information(self):
         all_def_params = {
-            "PROJECT_ROOT_PATH": rf"E:\UnrealProject\local_trunk\LyraStarterGame",
-            "ENGINE_ROOT_PATH": r"E:\UE-Release\UE_5.5",
+            "PROJECT_ROOT_PATH": rf"D:\projects\trunk\LyraStarterGame",
+            "ENGINE_ROOT_PATH": r"D:\ue\5.5.1",
             "ORIGINAL_WORKSPACE": "",
             "BRANCH_NAME": "trunk",
             "CONFIGURATION": "Development",
