@@ -1,15 +1,5 @@
 ﻿# -*- coding: UTF-8 -*-
-import hashlib
 import os
-import re
-import argparse
-import json
-import shutil
-import datetime
-
-from click import command
-from setuptools.config.expand import cmdclass
-
 
 # 兼容下chardet
 def install_module(module_name):
